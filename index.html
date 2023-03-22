@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dressify</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style type="text/css">
+    	.name{
+    		font-family: Agency FB;
+    		margin-left: 50px;
+    		margin-top: -30px;
+    		letter-spacing: 0.1in;
+
+    	}
+    	li a:hover{
+      background-color: #990d01;
+      color: #ffffff;
+    }
+    .discount{
+      border: black;
+      background-color: #fbec54;
+      padding: 20px;
+      width: 100%;
+      height: 250px;
+
+    }
+    .sale{
+      position: absolute;
+      border: black;
+      background-color: #990d01;
+      padding-left: 50px;
+      padding-bottom: 30px;
+      width: 50%;
+      height: 250px;
+      margin-left: -20px;
+      margin-top:-20px ;
+      font-size:150pt;
+      font-family: Castellar;
+      color: white;
+      letter-spacing: 0.2in;
+
+    }
+    .sale1{
+      position: absolute;
+      border: black;
+      background-color: #a21102;
+      padding-left: 50px;
+      padding-bottom: 30px;
+      width: 99%;
+      height: 250px;
+      margin-left: 0px;
+      margin-top:-20px ;
+      font-size:50pt;
+      font-family: Bahnschrift Condensed;
+      color: black;
+      letter-spacing: 0.2in;
+
+    }
+    .warehouse{
+      position: absolute;
+      border: black;
+      background-color: #990d01;
+      padding-left: 20px;
+      padding-top: 8px;
+      width: 100%;
+      height: 68px;
+      margin-left: -50px;
+      margin-top:-300px ;
+      font-size:40pt;
+      font-family: Agency FB;
+      color: black;
+      letter-spacing: 0.4in;
+
+    }
+    .shopN{ position: absolute;
+      text-decoration: none;
+     border: black;
+      background-color: black;
+      padding-left:30px;
+     padding-top: 10px; 
+     width: 22%; 
+     height: 50px;
+     margin-left:770px;
+     margin-top:-12px ;
+      font-size:12pt; 
+      font-family:Arial Black; 
+      color: white;
+
+    }
+    .trends{
+      border: solid #990d01;
+      background-color: #fcf4f5;
+      padding: 20px;
+      width: 97%;
+      height: 200px;
+      margin: 20px;
+      margin-right: 20px;
+      font-size: 50px;
+      letter-spacing: 0.17in;
+      padding-left: 190px;
+      padding-top: 30px;
+      font-family: Times New Roman;
+
+
+    }
+    .quote{
+      position: absolute;
+      border: black;
+      background-color: none;
+      padding-left: 74px;
+      padding-top: 8px;
+      width: 85%;
+      height: 68px;
+      margin-left: -120px;
+      margin-top:-10px ;
+      font-size:20pt;
+      font-family: Times New Roman;
+      color: black;
+      letter-spacing: 0.1in;
+
+    }
+    .shopNow{ position: absolute;
+     border: black;
+      background-color: #ffffff;
+      padding-left:120px;
+     padding-top: 10px; 
+     width: 30%; 
+     height: 60px;
+     margin-left:130px;
+     margin-top:-250px ;
+      font-size:19pt; 
+      font-family:times new roman
+      color: black;
+      text-decoration:none !important;
+
+    }
+    .shopNow1{ position: absolute;
+     border: black;
+      background-color: #ffffff;
+      padding-left:120px;
+     padding-top: 10px; 
+     width: 30%; 
+     height: 60px;
+     margin-left:450px;
+     margin-top:-65px ;
+      font-size:19pt; 
+      font-family:times new roman
+      color: black;
+      text-decoration:none !important;
+
+    }
+    .footer{
+      border: black;
+      background-color:black ;
+      padding: 20px;
+      width: 97%;
+      height: 280px;
+      margin-top: 20px;
+      margin-right: 20px;
+      margin-left: 20px;
+      margin-bottom: 20px;
+
+    }
+    .about{
+      position: absolute;
+      border: black;
+      background-color: black;
+      padding-left: 20px;
+      padding-top: 60px;
+      width: 35%;
+      height: 250px;
+      margin-left: -20px;
+      margin-top:-20px ;
+      font-size:13pt;
+      
+      color: white;
+    }
+    .aboutus{
+      position: absolute;
+      border: black;
+      background-color:black;
+      padding-left: 14px;
+      padding-top: 8px;
+      width: 30%;
+      height: 60px;
+      margin-left: -17px;
+      margin-top:-17px ;
+      font-size:20pt;
+      font-family: Times new roman;
+      color: orange;
+      letter-spacing: 0in;
+    }
+    .contact{
+      position: absolute;
+      border: black;
+      background-color: black;
+      padding-left: 0px;
+      padding-top: 0px;
+      width: 35%;
+      height: 200px;
+      margin-left: 500px;
+      margin-top:40px ;
+      font-size:15pt;
+      font-family: Times new roman;
+      color: white;
+     
+    }
+    .contact_info{
+      position: absolute;
+      height: 6%;
+      width: 35%;
+      background-color: black;
+      color: orange;
+      margin-left: 490px;
+      margin-top: -5px;
+      font-size:20pt;
+      font-family: Times new roman;
+      letter-spacing: 0px;
+
+    }
+    .follow{
+      position: absolute;
+      border: black;
+      background-color: black;
+      padding-left: 30px;
+      padding-top: -3px;
+      width: 70%;
+      height: 200px;
+      margin-left: 425px;
+      margin-top:-140px ;
+      font-size:13pt;
+      font-family: Times new roman;
+      color: white;
+     
+    }
+    .follow_us{
+      position: absolute;
+      height: 10%;
+      width: 35%;
+      background-color: black;
+      color: orange;
+      margin-left: 435px;
+      margin-top: -200px;
+      font-size:20pt;
+      font-family: Times new roman;
+      letter-spacing: 0px;
+    }
+    .icon {
+  box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 5px solid red;
+    border-radius: 100%;
+   
+}
+
+.icon::after {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin: 1px 0 0 -6px;
+    display: block;
+    content: '';
+    border: 6px solid transparent;
+    border-top: 10px solid red;
+    border-bottom: none;
+}
+a{
+      text-decoration: none;
+      color: white;
+    }
+
+
+    </style>
+  </head>
+  <body>
+ <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <nav class="navbar bg-body-tertiary" >
+  <div class="container-fluid">
+    <a class="navbar-brand" >
+      <img src="images/logo.png" alt="Logo" width="40" height="30" class="d-inline-block align-text-top"style="margin-top: 0px;">
+     <div class="name"> Dressify </div>
+    </a>
+  </div>
+</nav>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown" >
+    	<div class="space">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a style="margin-left: 10px;" class="nav-link active" aria-current="page" href="Dresses.html">DRESSES</a>
+        </li>
+        <li class="nav-item">
+          <a  style="margin-left: 90px;" class="nav-link active" aria-current="page" href="Outwear.html">OUTWEARS</a>
+        </li>
+        <li class="nav-item">
+          <a style="margin-left: 90px;" class="nav-link active" aria-current="page" href="Pants.html">PANTS</a>
+        </li>
+        <li class="nav-item">
+          <a style="margin-left: 90px;" class="nav-link active" aria-current="page" href="Shoes.html">SHOES</a>
+        </li>
+        <li class="nav-item">
+          <a style="margin-left: 90px;" class="nav-link active" aria-current="page" href="Sales.html">SALE</a>
+        </li>
+        <li class="nav-item">
+          <a style="margin-left: 90px;" class="nav-link active" aria-current="page" href="#about">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a style="margin-left: 90px;" class="nav-link  active" aria-current="page" href="Login.html">SIGN IN</a>
+        </li>
+          </ul>
+        </li>
+      </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="discount"><div class="sale1">BUY ONE  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    BUY ONE, GET &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ONE FREE<div class="shopN"><a href="Sales.html">SHOP NOW</a> </div></div><div class="sale" >  SALE <div class="warehouse">WAREHOUSE</div></div>
+
+</div>
+<div class="trends">TRENDS OF THE SEASON <div class="quote">Clothes mean nothing until someone lives in them</div></div>
+<div style="margin:20px">
+  <a href="Dresses.html"><img src="images/1.jpg"width="100%"height="auto"></a><br>
+  <a href="Dresses.html"><img src="images/2.jpg"width="100%"height="auto"></a><br><br>
+  <a href="Dresses.html"><img src="images/10.jpg"width="100%"height="auto"></a><br><br>
+  <a href="Dresses.html"><img src="images/12.jpg"width="100%"height="auto"></a><br><br>
+  <a href="Dresses.html"><img src="images/13.jpg"width="100%"height="auto"></a><br><br>
+ <a href="Dresses.html"> <img src="images/9.jpg"width="100%"height="auto"></a><br><br>
+</div>
+<div id="about" class="footer"><div class="about"><p>At Dressify, our purpose is simple: to live and deliver WOW.<br>
+
+Twenty years ago, we began as a small online retailer that only sold clothes. Today, we still sell clothes — as well as shoes, sweaters, and more. We aim to inspire the world by showing it's possible to simultaneously deliver happiness to customers, employees, shareholders, and the community in a long-term, sustainable way.<br>
+</p></div><div class="aboutus">ABOUT US</div><h3 class="contact_info">CONTACT INFORMATION</h3> <div class="contact">Location :<a href="https://www.google.com/maps/place/Peak+Solutions+College/@31.5500222,74.3786479,17z/data=!3m1!4b1!4m5!3m4!1s0x3919053f47772a6d:0x47a8ebb8f359eb8!8m2!3d31.5500176!4d74.3808366"> &nbsp;Zarar Shahed Road  Sadar Cantt Lhr </a><br><br>Call Us : &nbsp; 03234558465 <br><br>Email :<a href="mailto: mharoontahir3@gmail.com">mharoontahir3@gmail.com</a><h3 class="follow_us">FOLLOW US</h3><div class="follow"><a href="https://www.instagram.com/haroon_tahir_awan/"><img src="images/insta.jpg" alt="Logo" width="40" height="30" class="d-inline-block align-text-top"style="border-radius: 9px;margin-bottom: 10px;margin-left: 50px;"></a><br><a href="https://web.facebook.com/haroon.tahitawan"><img src="images/facebook.png" alt="Facebook" width="40" height="30" class="d-inline-block align-text-top"style="border-radius: 9px;margin-bottom: 10px;margin-left: 50px;"></a><br><a href="https://www.linkedin.com/in/muhammad-haroon_tahir-216a9a224"><img src="images/linkedin.jpg" alt="Linked_in" width="40" height="30" class="d-inline-block align-text-top"style="border-radius: 9px;margin-left: 50px;"></a></div></div></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dressify</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style type="text/css">
+      .name{
+        font-family: Agency FB;
+        margin-left: 50px;
+        margin-top: -30px;
+        letter-spacing: 0.1in;
+
+      }
+      li a:hover{
+      background-color: #990d01;
+      color:  white;
+    }
+    .sale{
+      position: absolute;
+      border: black;
+      background-color: #990d01;
+      padding-left: 50px;
+      padding-bottom: 30px;
+      width: 50%;
+      height: 250px;
+      margin-left: -20px;
+      margin-top:-20px ;
+      font-size:150pt;
+      font-family: Castellar;
+      color: white;
+      letter-spacing: 0.2in;
+
+    }
+    .sale1{
+      position: absolute;
+      border: black;
+      background-color: #a21102;
+      padding-left: 50px;
+      padding-bottom: 30px;
+      width: 99%;
+      height: 250px;
+      margin-left: 0px;
+      margin-top:-20px ;
+      font-size:50pt;
+      font-family: Bahnschrift Condensed;
+      color: black;
+      letter-spacing: 0.2in;
+
+}
+    .footer{
+      border: black;
+      background-color:black ;
+      padding: 20px;
+      width: 97%;
+      height: 280px;
+      margin-top: 20px;
+      margin-right: 20px;
+      margin-left: 20px;
+      margin-bottom: 20px;
+
+   
+    }
+    .about{
+      position: absolute;
+      border: black;
+      background-color: black;
+      padding-left: 20px;
+      padding-top: 60px;
+      width: 35%;
+      height: 250px;
+      margin-left: -20px;
+      margin-top:-20px ;
+      font-size:13pt;
+      
+      color: white;
+    }
+    .aboutus{
+      position: absolute;
+      border: black;
+      background-color:black;
+      padding-left: 14px;
+      padding-top: 8px;
+      width: 30%;
+      height: 60px;
+      margin-left: -17px;
+      margin-top:-17px ;
+      font-size:20pt;
+      font-family: Times new roman;
+      color: orange;
+      letter-spacing: 0in;
+    }
+    .contact{
+      position: absolute;
+      border: black;
+      background-color: black;
+      padding-left: 0px;
+      padding-top: 0px;
+      width: 35%;
+      height: 200px;
+      margin-left: 500px;
+      margin-top:40px ;
+      font-size:15pt;
+      font-family: Times new roman;
+      color: white;
+     
+    }
+    .contact_info{
+      position: absolute;
+      height: 6%;
+      width: 35%;
+      background-color: black;
+      color: orange;
+      margin-left: 490px;
+      margin-top: -5px;
+      font-size:20pt;
+      font-family: Times new roman;
+      letter-spacing: 0px;
+
+    }
+    .follow{
+      position: absolute;
+      border: black;
+      background-color: black;
+      padding-left: 30px;
+      padding-top: -3px;
+      width: 70%;
+      height: 200px;
+      margin-left: 425px;
+      margin-top:-140px ;
+      font-size:13pt;
+      font-family: Times new roman;
+      color: white;
+     
+    }
+    .follow_us{
+      position: absolute;
+      height: 10%;
+      width: 35%;
+      background-color: black;
+      color: orange;
+      margin-left: 435px;
+      margin-top: -200px;
+      font-size:20pt;
+      font-family: Times new roman;
+      letter-spacing: 0px;
+    }
+    .O{
+      border-radius: 5px;
+      height: 40px;
+      width: 150px;
+      margin-left: 550px;
+      background-color:#b21105 ;
+      color: black;
+    }
+    a{
+      text-decoration: none;
+      color: black;
+    }
+    .dress{
+      font-size: 40px;
+      margin-left:5px;
+      margin-bottom:0px;
+      margin-right: 500px
+    }
+  .container{
+    width: 90%;
+    margin:auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    
+  }
+  .gallery{
+    position: relative;
+    height: 390px;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px lightgray;
+     margin-bottom: 50px;
+  }
+  .gallery img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: 1px solid #586065;
+   
+
+  }
+  .desc{
+    padding: -0px;
+    text-align: center;
+    height: 90px;
+    border: 1px solid #586065 ;
+    border-radius: 5px;
+    width: 100%;
+    border-top: none;
+
+  }
+  .contact a{
+    color: white;
+  }
+  .menu{
+      font-size: 40px;
+      margin:5px;
+      border-width: 20px 100%;
+      background-color: gray;
+      border: 1px solid black;
+      padding-left: 40px;
+      font-family: Times new roman;
+
+    }
+    .snacker{
+      border-radius: 5px;
+      height: 50px;
+      width: 30%;
+      margin-left: 320px;
+      margin-top: -60px;
+      background-color:#b21105 ;
+      color: black;
+      font-size: 20px;
+      padding-top: 10px;
+      padding-left: 35px;
+    }
+    .flat{
+      border-radius: 5px;
+      height: 50px;
+      width: 30%;
+      margin-left: 590px;
+      margin-top: -50px;
+      background-color:#b21105 ;
+      color: black;
+      font-size: 20px;
+      padding-top: 10px;
+      padding-left: 90px;
+    }
+    .sandals{
+      border-radius: 5px;
+      height: 50px;
+      width: 29%;
+      margin-left: 922px;
+      margin-top: -50px;
+      background-color:#b21105 ;
+      color: black;
+      font-size: 20px;
+      padding-top: 10px;
+      padding-left: 35px;
+    }
+
+
+
+
+    </style>
+  </head>
+  <body>
+ <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: red;">
+  <div class="container-fluid">
+    <nav class="navbar bg-body-tertiary" >
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">
+      <img src="images/logo.png" alt="Logo" width="40" height="30" class="d-inline-block align-text-top"style="margin-top: 0px;">
+     <div class="name"> Dressify </div>
+    </a>
+  </div>
+</nav>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown" >
+      <div class="space">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a style="margin-left: 10px;" class="nav-link active" aria-current="page" href="#">DRESSES</a>
+        </li>
+        <li class="nav-item">
+          <a  style="margin-left: 90px;" class="nav-link active" aria-current="page" href="Outwear.html">OUTWEARS</a>
+        </li>
+        <li class="nav-item">
+          <a style="margin-left: 90px;" class="nav-link active" aria-current="page" href="Pants.html">PANTS</a>
+        </li>
+        <li class="nav-item">
+          <a style="margin-left: 90px;" class="nav-link active" aria-current="page" href="Shoes.html">SHOES</a>
+        </li>
+        <li class="nav-item">
+          <a style="margin-left: 90px;" class="nav-link active" aria-current="page" href="Sales">SALE</a>
+        </li>
+        <li class="nav-item">
+          <a style="margin-left: 90px;" class="nav-link active" aria-current="page" href="#about">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a style="margin-left: 90px;" class="nav-link  active" aria-current="page" href="Login.html">SIGN IN</a>
+        </li>
+          </ul>
+        </li>
+      </ul>
+      </div>
+    </div>
+  </div>
+</nav><br><br>
+<hr><div class="menu">DRESSES<div class="snacker"><a href="#L">Sneakers & Athletic</a></div><div class="flat"><a href="#M">Flat & Loafers</a></div><div class="sandals"><a href="#A">Sandals</a></div>
+
+</div>
+<div class="dress" id="L"><ul><li> Casual Dresses</li></ul></div> <hr>        
+<div class="container">
+
+  <div class="gallery">
+    <img id="s" src="images/31.jpg">
+    <div class="desc">Cartoon Crew Neck Casual Cotton-Blend Dress<br> <div style="color:red">RS. 3900</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/22.jpg">
+    <div class="desc">Crew Neck Plain Jersey Casual Midi Dress<br> <div style="color:red">RS. 5999</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/23.jpg">
+    <div class="desc">Sexy Ombre Halter Cross Loosen Midi Short sleeve Woven Dress<br> <div style="color:red">RS. 4400</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/20.jpg">
+    <div class="desc">Cartoon Crew Neck Casual Cotton-Blend Dress<br> <div style="color:red">RS. 5999</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/24.jpg">
+    <div class="desc">Printed Short Sleeve Casual Knitting Tunic Dress<br> <div style="color:red">RS. 5500</div></div>
+  </div>
+  
+  <div class="gallery">
+    <img src="images/21.jpg">
+    <div class="desc">Sexy Solid Short Sleeve Knit Elegant V Neck Short <br> <div style="color:red">RS. 2000</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/25.png">
+    <div class="desc">Women's Shift Dress Short Maxi Dress half Sleeve Dress 2023<br> <div style="color:red">RS. 5100</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/26.jpg">
+    <div class="desc">Abstract Casual Jersey Dress<br> <div style="color:red">RS. 6700</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/27.jpg">
+    <div class="desc">V Neck Houndstooth Casual Dress<br> <div style="color:red">RS. 4900</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/28.jpg">
+    <div class="desc">Women's A Line Dress Midi Dress Blue Half Sleeve<br> <div style="color:red">RS. 3800</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/29.jpg">
+    <div class="desc">Casual Plain Long Sleeve A-Line Dress<br> <div style="color:red">RS. 2100</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/33.jpg">
+    <div class="desc">Casual Plain Long Sleeve A-Line Dress<br> <div style="color:red">RS. 2100</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/32.jpg">
+    <div class="desc">Casual Plain Long Sleeve A-Line Dress<br> <div style="color:red">RS. 2100</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/34.jpg">
+    <div class="desc">Casual Plain Long Sleeve A-Line Dress<br> <div style="color:red">RS. 2100</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/35.jpg">
+    <div class="desc">Casual Plain Long Sleeve A-Line Dress<br> <div style="color:red">RS. 6100</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/36.jpg">
+    <div class="desc">Casual Plain Long Sleeve A-Line Dress<br> <div style="color:red">RS. 6000</div></div>
+  </div>
+
+</div>
+<br><br><hr><div class="dress" id="M"><ul><li> Formal Dresses</li></ul></div> <hr>        
+<div class="container">
+
+  <div class="gallery">
+    <img id="s" src="images/37.jpg">
+    <div class="desc">Floral Printed Round Neck Long Casual Sky Blue Dress-Two Piece Set<br> <div style="color:red">RS. 6700</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/38.jpg">
+    <div class="desc">V Neck Regular Fit Casual Short Tunic Dress<br> <div style="color:red">RS. 3999</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/39.jpg">
+    <div class="desc">Ladies Loosen Chiffon Floral Dress-Two Piece Set<br> <div style="color:red">RS. 6900</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/40.jpg">
+    <div class="desc"> Autumn Chiffon Daily Coat With Skirt H-Line Regular Regular Size Two Piece Set for Women<br> <div style="color:red">RS. 5999</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/41.jpg">
+    <div class="desc">Butterfly Printed Casual Round Neck Dress With Coat Two Piece Set<br> <div style="color:red">RS. 7000</div></div>
+  </div>
+  
+  <div class="gallery">
+    <img src="images/42.jpg">
+    <div class="desc">Tribal Vacation Long Sleeve Woven Tunic Dress <br> <div style="color:red">RS. 4900</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/43.jpg">
+    <div class="desc">Two Piece Floral Sleeveless Round Neck Printed Dress <br> <div style="color:red">RS. 7100</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/44.jpg">
+    <div class="desc">Long Sleeve Party Dress<br> <div style="color:red">RS. 6700</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/45.jpg">
+    <div class="desc">Sexy Solid V neck Long Sleeve A-line Dress<br> <div style="color:red">RS. 4900</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/46.jpg">
+    <div class="desc">Color Block Asymmetrical Casual Dress<br> <div style="color:red">RS. 5800</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/47.jpg">
+    <div class="desc">Sexy Abstract Cotton-Blend Long Sleeve Dress<br> <div style="color:red">RS. 7500</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/48.jpg">
+    <div class="desc">Floral-Print Halter Sleeveless Casual Weaving Dress<br> <div style="color:red">RS. 3100</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/49.jpg">
+    <div class="desc">Regular Fit Plain Party V Neck Midi Dress<br> <div style="color:red">RS. 5100</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/50.jpg">
+    <div class="desc">Geometric Printed V Neck Half Sleeve Loose Tunic Dress<br> <div style="color:red">RS. 2100</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/51.jpg">
+    <div class="desc">Vintage Floral Autumn  Regular Fit Jersey Three Quarter Crew Neck Dress<br> <div style="color:red">RS. 5400</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/52.jpg">
+    <div class="desc">Cotton-Blend Off Shoulder Cold Shoulder Two Piece Set<br> <div style="color:red">RS. 6000</div></div>
+  </div>
+
+</div>
+<br><br><hr><div class="dress" id="A"><ul><li> Party & Cocktail Dresses</li></ul></div><hr>         
+<div class="container">
+
+  <div class="gallery">
+    <img id="s" src="images/53.jpg">
+    <div class="desc">Long Sleeve Casual Off Shoulder Cold Shoulder Solid Knitting Dress<br> <div style="color:red">RS. 6900</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/54.jpg">
+    <div class="desc">Shift Casual Plain V neck Weaving Dress<br> <div style="color:red">RS. 5999</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/55.jpg">
+    <div class="desc">Sexy Off Shoulder Cold Shoulder Knitting Dress<br> <div style="color:red">RS. 5400</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/56.jpg">
+    <div class="desc">Casual Solid Regular Fit Knitting Dress<br> <div style="color:red">RS. 5999</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/57.jpg">
+    <div class="desc">Plain Loose V Neck Sexy Short Tunic Dress<br> <div style="color:red">RS. 5500</div></div>
+  </div>
+  
+  <div class="gallery">
+    <img src="images/58.jpg">
+    <div class="desc">Short Sleeve V Neck Cotton-Blend Casual Knitting Dress <br> <div style="color:red">RS. 2000</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/59.jpg">
+    <div class="desc">Vintage Off Shoulder Cold Shoulder Plain Casual Weaving Dress<br> <div style="color:red">RS. 4700</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/60.jpg">
+    <div class="desc">Vintage Geometric Statement Sleeveless Crew Neck Casual Weaving Dress<br> <div style="color:red">RS. 6700</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/61.jpg">
+    <div class="desc">Boat Neck Loosen Casual Solid White Wedding Maxi Short sleeve Woven Dress<br> <div style="color:red">RS. 4900</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/62.jpg">
+    <div class="desc">Boho U-Neck Cotton Blends Knitting Dress<br> <div style="color:red">RS. 6800</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/63.jpg">
+    <div class="desc"> Fit Short sleeve Knit Dress<br> <div style="color:red">RS. 3100</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/64.jpg">
+    <div class="desc">Abstract Printed Halter Sleeveless Dress<br> <div style="color:red">RS. 5100</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/65.jpg">
+    <div class="desc">Vintage Turtleneck Long Sleeve Polyester Cotton Top<br> <div style="color:red">RS. 1900</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/66.jpg">
+    <div class="desc">Women's Sheath Dress Short Mini Dress Blue Sleeveless Print Print Vacation Geometric Halter 2022<br> <div style="color:red">RS. 6100</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/67.jpg">
+    <div class="desc">Halter Floral Casual Sleeveless Knitting Dress<br> <div style="color:red">RS. 4100</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/68.jpg">
+    <div class="desc">Vintage Solid Eyelet Hotfix V Neck Long Sleeve Casual Tunic Top<br> <div style="color:red">RS. 6000</div></div>
+  </div>
+
+</div><br><br>
+               
+<div id="about" class="footer"><div class="about"><p>At Dressify, our purpose is simple: to live and deliver WOW.<br>
+
+Twenty years ago, we began as a small online retailer that only sold clothes. Today, we still sell clothes — as well as shoes, sweaters, and more. We aim to inspire the world by showing it's possible to simultaneously deliver happiness to customers, employees, shareholders, and the community in a long-term, sustainable way.<br>
+</p></div><div class="aboutus">ABOUT US</div><h3 class="contact_info">CONTACT INFORMATION</h3> <div class="contact">Location :<a href="https://www.google.com/maps/place/Peak+Solutions+College/@31.5500222,74.3786479,17z/data=!3m1!4b1!4m5!3m4!1s0x3919053f47772a6d:0x47a8ebb8f359eb8!8m2!3d31.5500176!4d74.3808366"> &nbsp;Zarar Shahed Road  Sadar Cantt Lhr </a><br><br>Call Us : &nbsp; 03234558465 <br><br>Email :<a href="mailto: mharoontahir3@gmail.com">mharoontahir3@gmail.com</a><h3 class="follow_us">FOLLOW US</h3><div class="follow"><a href="https://www.instagram.com/haroon_tahir_awan/"><img src="images/insta.jpg" alt="Logo" width="40" height="30" class="d-inline-block align-text-top"style="border-radius: 9px;margin-bottom: 10px;margin-left: 50px;"></a><br><a href="https://web.facebook.com/haroon.tahitawan"><img src="images/facebook.png" alt="Facebook" width="40" height="30" class="d-inline-block align-text-top"style="border-radius: 9px;margin-bottom: 10px;margin-left: 50px;"></a><br><a href="https://www.linkedin.com/in/muhammad-haroon_tahir-216a9a224"><img src="images/linkedin.jpg" alt="Linked_in" width="40" height="30" class="d-inline-block align-text-top"style="border-radius: 9px;margin-left: 50px;"></a></div></div></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>

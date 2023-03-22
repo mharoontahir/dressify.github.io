@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dressify</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style type="text/css">
+      .name{
+        font-family: Agency FB;
+        margin-left: 50px;
+        margin-top: -30px;
+        letter-spacing: 0.1in;
+
+      }
+      li a:hover{
+      background-color: #990d01;
+      color:  white;
+    }
+    .sale{
+      position: absolute;
+      border: black;
+      background-color: #990d01;
+      padding-left: 50px;
+      padding-bottom: 30px;
+      width: 50%;
+      height: 250px;
+      margin-left: -20px;
+      margin-top:-20px ;
+      font-size:150pt;
+      font-family: Castellar;
+      color: white;
+      letter-spacing: 0.2in;
+
+    }
+    .sale1{
+      position: absolute;
+      border: black;
+      background-color: #a21102;
+      padding-left: 50px;
+      padding-bottom: 30px;
+      width: 99%;
+      height: 250px;
+      margin-left: 0px;
+      margin-top:-20px ;
+      font-size:50pt;
+      font-family: Bahnschrift Condensed;
+      color: black;
+      letter-spacing: 0.2in;
+
+}
+    .footer{
+      border: black;
+      background-color:black ;
+      padding: 20px;
+      width: 97%;
+      height: 280px;
+      margin-top: 20px;
+      margin-right: 20px;
+      margin-left: 20px;
+      margin-bottom: 20px;
+
+    }
+    .about{
+      position: absolute;
+      border: black;
+      background-color: black;
+      padding-left: 20px;
+      padding-top: 60px;
+      width: 35%;
+      height: 250px;
+      margin-left: -20px;
+      margin-top:-20px ;
+      font-size:13pt;
+      
+      color: white;
+    }
+    .aboutus{
+      position: absolute;
+      border: black;
+      background-color:black;
+      padding-left: 14px;
+      padding-top: 8px;
+      width: 30%;
+      height: 60px;
+      margin-left: -17px;
+      margin-top:-17px ;
+      font-size:20pt;
+      font-family: Times new roman;
+      color: orange;
+      letter-spacing: 0in;
+    }
+    .contact{
+      position: absolute;
+      border: black;
+      background-color: black;
+      padding-left: 0px;
+      padding-top: 0px;
+      width: 35%;
+      height: 200px;
+      margin-left: 500px;
+      margin-top:40px ;
+      font-size:15pt;
+      font-family: Times new roman;
+      color: white;
+     
+    }
+    .contact_info{
+      position: absolute;
+      height: 6%;
+      width: 35%;
+      background-color: black;
+      color: orange;
+      margin-left: 490px;
+      margin-top: -5px;
+      font-size:20pt;
+      font-family: Times new roman;
+      letter-spacing: 0px;
+
+    }
+    .follow{
+      position: absolute;
+      border: black;
+      background-color: black;
+      padding-left: 30px;
+      padding-top: -3px;
+      width: 70%;
+      height: 200px;
+      margin-left: 425px;
+      margin-top:-140px ;
+      font-size:13pt;
+      font-family: Times new roman;
+      color: white;
+     
+    }
+    .follow_us{
+      position: absolute;
+      height: 10%;
+      width: 35%;
+      background-color: black;
+      color: orange;
+      margin-left: 435px;
+      margin-top: -200px;
+      font-size:20pt;
+      font-family: Times new roman;
+      letter-spacing: 0px;
+    }
+    .O{
+      border-radius: 5px;
+      height: 40px;
+      width: 150px;
+      margin-left: 550px;
+      background-color:#b21105 ;
+      color: black;
+    }
+    a{
+      text-decoration: none;
+      color: black;
+    }
+    .dress{
+      font-size: 40px;
+      margin-left:5px;
+      margin-bottom:0px;
+      margin-right: 500px
+    }
+  .container{
+    width: 90%;
+    margin:auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    
+  }
+  .gallery{
+    position: relative;
+    height: 390px;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px lightgray;
+     margin-bottom: 50px;
+  }
+  .gallery img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: 1px solid #586065;
+   
+
+  }
+  .desc{
+    padding: -0px;
+    text-align: center;
+    height: 90px;
+    border: 1px solid #586065 ;
+    border-radius: 5px;
+    width: 100%;
+    border-top: none;
+
+  }
+  .contact a{
+    color: white;
+  }
+  .menu{
+      font-size: 40px;
+      margin:5px;
+      border-width: 20px 100%;
+      background-color: gray;
+      border: 1px solid black;
+      padding-left: 40px;
+      font-family: Times new roman;
+
+    }
+    .snacker{
+      border-radius: 5px;
+      height: 50px;
+      width: 30%;
+      margin-left: 250px;
+      margin-top: -60px;
+      background-color:#b21105 ;
+      color: black;
+      font-size: 20px;
+      padding-top: 10px;
+      padding-left: 35px;
+    }
+    .flat{
+      border-radius: 5px;
+      height: 50px;
+      width: 55%;
+      margin-left: 500px;
+      margin-top: -50px;
+      background-color:#b21105 ;
+      color: black;
+      font-size: 20px;
+      padding-top: 10px;
+      padding-left: 90px;
+    }
+    .sandals{
+      border-radius: 5px;
+      height: 50px;
+      width: 32.3%;
+      margin-left: 880px;
+      margin-top: -50px;
+      background-color:#b21105 ;
+      color: black;
+      font-size: 20px;
+      padding-top: 10px;
+      padding-left: 35px;
+    }
+
+
+
+
+    </style>
+  </head>
+  <body>
+ <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: red;">
+  <div class="container-fluid">
+    <nav class="navbar bg-body-tertiary" >
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">
+      <img src="images/logo.png" alt="Logo" width="40" height="30" class="d-inline-block align-text-top"style="margin-top: 0px;">
+     <div class="name"> Dressify </div>
+    </a>
+  </div>
+</nav>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown" >
+      <div class="space">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a style="margin-left: 10px;" class="nav-link active" aria-current="page" href="Dresses.html">DRESSES</a>
+        </li>
+        <li class="nav-item">
+          <a  style="margin-left: 90px;" class="nav-link active" aria-current="page" href="Outwear.html">OUTWEARS</a>
+        </li>
+        <li class="nav-item">
+          <a style="margin-left: 90px;" class="nav-link active" aria-current="page" href="Pants.html">PANTS</a>
+        </li>
+        <li class="nav-item">
+          <a style="margin-left: 90px;" class="nav-link active" aria-current="page" href="Shoes">SHOES</a>
+        </li>
+        <li class="nav-item">
+          <a style="margin-left: 90px;" class="nav-link active" aria-current="page" href="Sales.html">SALE</a>
+        </li>
+        <li class="nav-item">
+          <a style="margin-left: 90px;" class="nav-link active" aria-current="page" href="#about">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a style="margin-left: 90px;" class="nav-link  active" aria-current="page" href="Login.html">SIGN IN</a>
+        </li>
+          </ul>
+        </li>
+      </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="menu">SHOES<div class="snacker"><a href="#L">Sneakers & Athletic</a></div><div class="flat"><a href="#M">Flat & Loafers</a></div><div class="sandals"><a href="#A">Sandals</a></div>
+
+</div>
+         <br><br>
+<hr><div class="dress" id="L"><ul><li> Sneakers & Athletic</li></ul></div> <hr>        
+<div class="container">
+
+  <div class="gallery">
+    <img id="s" src="images/166.jpg">
+    <div class="desc">All Season Casual Daily Flat Heel Sneakers<br> <div style="color:red">RS. 3900</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/167.jpg">
+    <div class="desc">Breathable Hollow Fabric Mesh Velcro Portable Walking Shoes<br> <div style="color:red">RS. 5999</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/168.jpg">
+    <div class="desc"> Lightweight Breathable Non-Slip Lace-Up Sneakers<br> <div style="color:red">RS. 2400</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/169.jpg">
+    <div class="desc">Glitter Sparkling Personalized Casual Flat Sneakers<br> <div style="color:red">RS. 5999</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/170.jpg">
+    <div class="desc">Mesh Platform Solid Color Lace-Up Flyknit Lightweight Soft Sole Slip-On Sneakers<br> <div style="color:red">RS. 5500</div></div>
+  </div>
+  
+  <div class="gallery">
+    <img src="images/171.jpg">
+    <div class="desc">All Season Canvas Sneaker Heel Casual Flats <br> <div style="color:red">RS. 2000</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/172.jpg">
+    <div class="desc">Middle Aged And Elderly Breathable Soft Sole Walking Shoes<br> <div style="color:red">RS. 1500</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/173.jpg">
+    <div class="desc">Blue Faux Leather Hollow-Out Wedge Heel Sneakers<br> <div style="color:red">RS. 2000</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/174.jpg">
+    <div class="desc">Plus Size Breathable Mesh Fabric Lace-up Decor Sneakers<br> <div style="color:red">RS. 4900</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/175.jpg">
+    <div class="desc">Canvas Flat Heel Casual Flats Sneakers&athletic<br> <div style="color:red">RS. 3800</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/176.jpg">
+    <div class="desc">Plus Size Breathable Slip On Sports Sneakers<br> <div style="color:red">RS. 2100</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/177.jpg">
+    <div class="desc">Plus Size Breathable Metal Decor Slip On Shoes<br> <div style="color:red">RS. 4100</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/178.jpg">
+    <div class="desc">Halloween Black Skull Print Distressed Lace Up Sneakers<br> <div style="color:red">RS. 3100</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/179.jpg">
+    <div class="desc">Text-print Warm Lined Lace-Up Sneakers<br> <div style="color:red">RS. 4200</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/180.jpg">
+    <div class="desc">Plus Size Lightweight Mesh Knit Slip on Sneakers<br> <div style="color:red">RS. 5300</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/181.jpg">
+    <div class="desc">Christmas Santa Claus Snowflake Lace-Up Canvas Shoes<br> <div style="color:red">RS. 6000</div></div>
+  </div>
+
+</div>
+<br><br><hr><div class="dress" id="M"><ul><li> Flats & Loafers</li></ul></div> <hr>        
+<div class="container">
+
+  <div class="gallery">
+    <img id="s" src="images/182.jpg">
+    <div class="desc">Vintage Casual V-Buckle Flat Shoes<br> <div style="color:red">RS. 3700</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/183.jpg">
+    <div class="desc">Women's Casual Vintage Round Toe Flats All Season Shoes<br> <div style="color:red">RS. 3999</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/184.jpg">
+    <div class="desc">Vintage All Season Snakeskin Split Joint Sports & Outdoor Flat Heel Round Toe Fabric EVA Sneakers for Women<br> <div style="color:red">RS. 6900</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/185.jpg">
+    <div class="desc"> Simple Style Plain Color Faux Suede Flat Shallow Shoes<br> <div style="color:red">RS. 5999</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/186.jpg">
+    <div class="desc"> Red Plaid Black And White Plaid Leopard Casual Flat Shoes<br> <div style="color:red">RS. 7000</div></div>
+  </div>
+  
+  <div class="gallery">
+    <img src="images/187.jpg">
+    <div class="desc">Womens's Plain Slip On Faux Fur Lined Flat Peas Shoes <br> <div style="color:red">RS. 4900</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/189.jpg">
+    <div class="desc">Women's Plus Size Bow Decor Hollow out Slip On Mary Jane Shoes <br> <div style="color:red">RS. 7100</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/190.jpg">
+    <div class="desc">Breathable Mesh Fabric Plus Size Casual Slip On Flat Shoes<br> <div style="color:red">RS. 6700</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/191.jpg">
+    <div class="desc">Simple Plus Size Beading Lace-Up Flat Mary Jane Shoes<br> <div style="color:red">RS. 4900</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/192.jpg">
+    <div class="desc">Vintage Casual Anti-Suede Panel Flats<br> <div style="color:red">RS. 5800</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/193.jpg">
+    <div class="desc">Summer Casual Flat Heel Breathable Loafers<br> <div style="color:red">RS. 7500</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/194.jpg">
+    <div class="desc">All Season Hollow-Out Flats<br> <div style="color:red">RS. 5100</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/195.jpg">
+    <div class="desc"> Plus Size Rhinestone Casual Flat Shoes<br> <div style="color:red">RS. 5100</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/196.jpg">
+    <div class="desc">Plus Size Comfy Floral Moccasin Peas Shoes <br> <div style="color:red">RS. 2100</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/197.jpg">
+    <div class="desc">Simple Plus Size Beading Lace-Up Flat Mary Jane Shoes<br> <div style="color:red">RS. 5400</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/198.jpg">
+    <div class="desc">Plus Size Comfy Braided Strap Flat Loafers<br> <div style="color:red">RS. 6000</div></div>
+  </div>
+
+</div>
+<br><br><hr><div class="dress" id="A"><ul><li> Sandals</li></ul></div><hr>         
+<div class="container">
+
+  <div class="gallery">
+    <img id="s" src="images/213.jpg">
+    <div class="desc">Moonstone Beaded Thin Strap Cross Boho Casual Sandals<br> <div style="color:red">RS. 6900</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/199.jpg">
+    <div class="desc">Women's Lace Romantic White Flower Decorative Summer Wedding Sandals<br> <div style="color:red">RS. 5999</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/200.jpg">
+    <div class="desc">Beaded Thin Strap Bohemian Thong Sandals<br> <div style="color:red">RS. 5400</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/201.jpg">
+    <div class="desc">Ethnic Pattern Punched Hollow Velcro Vintage Sandals<br> <div style="color:red">RS. 5999</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/202.jpg">
+    <div class="desc">Solid Color Vintage Casual Chunky Heel Sandals<br> <div style="color:red">RS. 5500</div></div>
+  </div>
+  
+  <div class="gallery">
+    <img src="images/203.jpg">
+    <div class="desc">Pearl Beaded Thin Strap Cross Bohemian Casual Sandals<br> <div style="color:red">RS. 2000</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/204.jpg">
+    <div class="desc">Retro Solid Color Casual Velcro Portable Sandals<br> <div style="color:red">RS. 4700</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/205.jpg">
+    <div class="desc">Vintage Openwork Roman Sandals<br> <div style="color:red">RS. 6700</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/206.jpg">
+    <div class="desc">Retro Casual Old Velcro Peep Toe Sandals<br> <div style="color:red">RS. 4900</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/207.jpg">
+    <div class="desc">Glitter Sparkling Thin Strap Block Heel Sandals<br> <div style="color:red">RS. 6800</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/208.jpg">
+    <div class="desc">Tropical Print Bow Beach Slippers<br> <div style="color:red">RS. 3100</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/209.jpg">
+    <div class="desc">Retro Hollow Buckle Beach Slippers<br> <div style="color:red">RS. 5100</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/210.jpg">
+    <div class="desc">Metal Rhinestone Slope Heel Flip-Flops<br> <div style="color:red">RS. 1900</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/211.jpg">
+    <div class="desc">Beach Leaf Flip-Flops<br> <div style="color:red">RS. 6100</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/212.jpg">
+    <div class="desc">Bow Weave Fish Mouth Wedge Sandals<br> <div style="color:red">RS. 4100</div></div>
+  </div>
+  <div class="gallery">
+    <img src="images/214.jpg">
+    <div class="desc">Vacation Beach Home Fruit Pattern Flip-flops<br> <div style="color:red">RS. 6000</div></div>
+  </div>
+
+</div><br><br>
+               
+<div id="about" class="footer"><div class="about"><p>At Dressify, our purpose is simple: to live and deliver WOW.<br>
+
+Twenty years ago, we began as a small online retailer that only sold clothes. Today, we still sell clothes — as well as shoes, sweaters, and more. We aim to inspire the world by showing it's possible to simultaneously deliver happiness to customers, employees, shareholders, and the community in a long-term, sustainable way.<br>
+</p></div><div class="aboutus">ABOUT US</div><h3 class="contact_info">CONTACT INFORMATION</h3> <div class="contact">Location :<a href="https://www.google.com/maps/place/Peak+Solutions+College/@31.5500222,74.3786479,17z/data=!3m1!4b1!4m5!3m4!1s0x3919053f47772a6d:0x47a8ebb8f359eb8!8m2!3d31.5500176!4d74.3808366"> &nbsp;Zarar Shahed Road  Sadar Cantt Lhr </a><br><br>Call Us : &nbsp; 03234558465 <br><br>Email :<a href="mailto: mharoontahir3@gmail.com">mharoontahir3@gmail.com</a><h3 class="follow_us">FOLLOW US</h3><div class="follow"><a href="https://www.instagram.com/haroon_tahir_awan/"><img src="images/insta.jpg" alt="Logo" width="40" height="30" class="d-inline-block align-text-top"style="border-radius: 9px;margin-bottom: 10px;margin-left: 50px;"></a><br><a href="https://web.facebook.com/haroon.tahitawan"><img src="images/facebook.png" alt="Facebook" width="40" height="30" class="d-inline-block align-text-top"style="border-radius: 9px;margin-bottom: 10px;margin-left: 50px;"></a><br><a href="https://www.linkedin.com/in/muhammad-haroon_tahir-216a9a224"><img src="images/linkedin.jpg" alt="Linked_in" width="40" height="30" class="d-inline-block align-text-top"style="border-radius: 9px;margin-left: 50px;"></a></div></div></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
